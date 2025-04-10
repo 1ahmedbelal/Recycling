@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Recycling Techniques</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="recycling-techniques.html" class="active">Recycling Techniques</a></li>
+        <li><a href="hybrid-innovations.html">Hybrid & Community Impact</a></li>
+        <li><a href="future-recycling.html">Future Recycling</a></li>
+        <li><a href="references.html">References</a></li>
+      </ul>
+    </nav>
+    <div class="subpage-header">
+      <h1>Understanding Recycling Techniques</h1>
+    </div>
+  </header>
+  <main>
+    <section>
+      <h2>Mechanical Recycling</h2>
+      <p>
+        Mechanical recycling involves physical processes like shredding, washing, and re-extruding plastics.
+        It is commonly used because it is cost-effective; however, repeated recycling can lead to polymer degradation,
+        reducing the strength and quality of the plastic. Additionally, contamination from mixed materials can make the 
+        recycled product less pure and lower its market value.
+      </p>
+      <ul>
+        <li><strong>Process:</strong> Shredding, washing, re-extruding</li>
+        <li><strong>Challenges:</strong> Quality loss, contamination, economic disadvantages</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Chemical Recycling</h2>
+      <p>
+        Chemical recycling breaks down plastics into their original monomers using chemical reactions.
+        This process can produce higher quality recycled material that retains many of the original properties.
+        However, this method requires higher energy input and is more expensive compared to mechanical recycling.
+        Its scalability is limited by high cost and process complexity.
+      </p>
+      <ul>
+        <li><strong>Process:</strong> Chemical breakdown into monomers</li>
+        <li><strong>Benefits:</strong> Higher quality, longer-lasting products</li>
+        <li><strong>Challenges:</strong> High energy demand, cost, scalability issues</li>
+      </ul>
+    </section>
+
+    <section class="poll-section">
+      <h2>Interactive Poll</h2>
+      <p>Which recycling method do you think is more sustainable?</p>
+      <form id="pollForm">
+        <input type="radio" id="mechanical" name="recycling" value="Mechanical">
+        <label for="mechanical">Mechanical Recycling</label><br>
+        <input type="radio" id="chemical" name="recycling" value="Chemical">
+        <label for="chemical">Chemical Recycling</label><br>
+        <button type="button" onclick="submitPoll()">Vote</button>
+      </form>
+      <div id="pollResult"></div>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2025 Recycling Reimagined. All Rights Reserved.</p>
+  </footer>
+  <script>
+    function submitPoll() {
+      var choices = document.getElementsByName('recycling');
+      var selected = "";
+      for (var i = 0; i < choices.length; i++) {
+        if (choices[i].checked) {
+          selected = choices[i].value;
+          break;
+        }
+      }
+      var resultDiv = document.getElementById('pollResult');
+      if (selected) {
+        resultDiv.innerHTML = "Thank you for voting! You selected: " + selected;
+      } else {
+        resultDiv.innerHTML = "Please select an option before voting.";
+      }
+    }
+  </script>
+</body>
+</html>
