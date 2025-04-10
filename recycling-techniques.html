@@ -25,65 +25,31 @@
     <section>
       <h2>Mechanical Recycling</h2>
       <p>
-        Mechanical recycling involves physical processes like shredding, washing, and re-extruding plastics.
-        It is commonly used because it is cost-effective; however, repeated recycling can lead to polymer degradation,
-        reducing the strength and quality of the plastic. Additionally, contamination from mixed materials can make the 
-        recycled product less pure and lower its market value.
+        Mechanical recycling involves physical processes like shredding, washing, and re-extruding plastic. 
+        Though cost-effective, repeated recycling can lead to polymer degradation which diminishes product quality. 
+        Contamination from mixed materials also lowers purity and market value.
       </p>
       <ul>
         <li><strong>Process:</strong> Shredding, washing, re-extruding</li>
-        <li><strong>Challenges:</strong> Quality loss, contamination, economic disadvantages</li>
+        <li><strong>Issues:</strong> Quality loss, contamination, lower market value</li>
       </ul>
     </section>
-
     <section>
       <h2>Chemical Recycling</h2>
       <p>
-        Chemical recycling breaks down plastics into their original monomers using chemical reactions.
-        This process can produce higher quality recycled material that retains many of the original properties.
-        However, this method requires higher energy input and is more expensive compared to mechanical recycling.
-        Its scalability is limited by high cost and process complexity.
+        Chemical recycling uses chemical reactions to break polymers down into their original monomers.
+        This yields higher quality materials that often retain many of their original properties. 
+        However, it demands higher energy and resource input, making it more expensive and challenging to scale.
       </p>
       <ul>
         <li><strong>Process:</strong> Chemical breakdown into monomers</li>
-        <li><strong>Benefits:</strong> Higher quality, longer-lasting products</li>
-        <li><strong>Challenges:</strong> High energy demand, cost, scalability issues</li>
+        <li><strong>Benefits:</strong> Retains material quality</li>
+        <li><strong>Issues:</strong> High energy consumption and cost</li>
       </ul>
     </section>
-
-    <section class="poll-section">
-      <h2>Interactive Poll</h2>
-      <p>Which recycling method do you think is more sustainable?</p>
-      <form id="pollForm">
-        <input type="radio" id="mechanical" name="recycling" value="Mechanical">
-        <label for="mechanical">Mechanical Recycling</label><br>
-        <input type="radio" id="chemical" name="recycling" value="Chemical">
-        <label for="chemical">Chemical Recycling</label><br>
-        <button type="button" onclick="submitPoll()">Vote</button>
-      </form>
-      <div id="pollResult"></div>
-    </section>
   </main>
-  <footer>
-    <p>&copy; 2025 Recycling Reimagined. All Rights Reserved.</p>
-  </footer>
-  <script>
-    function submitPoll() {
-      var choices = document.getElementsByName('recycling');
-      var selected = "";
-      for (var i = 0; i < choices.length; i++) {
-        if (choices[i].checked) {
-          selected = choices[i].value;
-          break;
-        }
-      }
-      var resultDiv = document.getElementById('pollResult');
-      if (selected) {
-        resultDiv.innerHTML = "Thank you for voting! You selected: " + selected;
-      } else {
-        resultDiv.innerHTML = "Please select an option before voting.";
-      }
-    }
-  </script>
+  <div class="submission-info">
+    DC COMP II research remix assignment submission, mrs. flint, made by ahmed belal, april 2025
+  </div>
 </body>
 </html>
