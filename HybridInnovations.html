@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hybrid Innovations & Community Impact</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="recycling-techniques.html">Recycling Techniques</a></li>
+        <li><a href="hybrid-innovations.html" class="active">Hybrid & Community Impact</a></li>
+        <li><a href="future-recycling.html">Future Recycling</a></li>
+        <li><a href="references.html">References</a></li>
+      </ul>
+    </nav>
+    <div class="subpage-header">
+      <h1>Hybrid Innovations & Community Impact</h1>
+    </div>
+  </header>
+  <main>
+    <section>
+      <h2>The Hybrid Approach</h2>
+      <p>
+        Combining mechanical and chemical recycling methods can leverage the strengths of both processes.
+        Mechanical recycling provides an affordable means of initial processing, while chemical recycling refines the quality.
+        This innovative hybrid approach aims to produce durable, high-quality recycled plastics with reduced energy consumption.
+        Integration challenges and higher initial setup costs remain as hurdles to overcome.
+      </p>
+      <ul>
+        <li>Enhanced quality through combined processes</li>
+        <li>Potential reduction in energy consumption</li>
+        <li>Challenges include system integration and startup costs</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Community Initiatives</h2>
+      <p>
+        Local projects like Precious Plastic showcase how community-driven recycling efforts can make a difference.
+        These initiatives not only manage plastic waste but also deliver socioeconomic benefits by creating jobs and inspiring sustainable practices within communities.
+      </p>
+      <ul>
+        <li>Localized recycling models provide environmental and social value</li>
+        <li>Community recycling centers and hands-on projects</li>
+        <li>Real-world examples and success stories</li>
+      </ul>
+    </section>
+
+    <section class="quiz-section">
+      <h2>Quick Recycling Quiz</h2>
+      <p>Test your knowledge on recycling facts:</p>
+      <form id="quizForm">
+        <label for="quiz">Mechanical recycling often leads to which problem?</label><br>
+        <input type="radio" id="degradation" name="quiz" value="Polymer degradation">
+        <label for="degradation">Polymer degradation</label><br>
+        <input type="radio" id="cost" name="quiz" value="High cost">
+        <label for="cost">High cost</label><br>
+        <input type="radio" id="efficiency" name="quiz" value="Increased efficiency">
+        <label for="efficiency">Increased efficiency</label><br>
+        <button type="button" onclick="submitQuiz()">Submit</button>
+      </form>
+      <div id="quizResult"></div>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2025 Recycling Reimagined. All Rights Reserved.</p>
+  </footer>
+  <script>
+    function submitQuiz() {
+      var quizOptions = document.getElementsByName('quiz');
+      var selected = "";
+      for (var i = 0; i < quizOptions.length; i++) {
+        if (quizOptions[i].checked) {
+          selected = quizOptions[i].value;
+          break;
+        }
+      }
+      var resultDiv = document.getElementById('quizResult');
+      if (selected) {
+        if (selected === "Polymer degradation") {
+          resultDiv.innerHTML = "Correct! Mechanical recycling can cause polymer degradation.";
+        } else {
+          resultDiv.innerHTML = "Incorrect. Try again!";
+        }
+      } else {
+        resultDiv.innerHTML = "Please select an option.";
+      }
+    }
+  </script>
+</body>
+</html>
