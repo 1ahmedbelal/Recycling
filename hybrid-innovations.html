@@ -25,71 +25,31 @@
     <section>
       <h2>The Hybrid Approach</h2>
       <p>
-        Combining mechanical and chemical recycling methods can leverage the strengths of both processes.
-        Mechanical recycling provides an affordable means of initial processing, while chemical recycling refines the quality.
-        This innovative hybrid approach aims to produce durable, high-quality recycled plastics with reduced energy consumption.
-        Integration challenges and higher initial setup costs remain as hurdles to overcome.
+        By combining mechanical and chemical recycling, the hybrid approach leverages the strengths of both methods.
+        Mechanical recycling provides cost-effective processing while chemical recycling refines the output for higher quality.
+        Although integration presents challenges and higher startup costs, this method promises enhanced performance and efficiency.
       </p>
       <ul>
-        <li>Enhanced quality through combined processes</li>
-        <li>Potential reduction in energy consumption</li>
-        <li>Challenges include system integration and startup costs</li>
+        <li>Improved material quality</li>
+        <li>Potential energy reductions</li>
+        <li>Challenges in integration and initial costs</li>
       </ul>
     </section>
-
     <section>
       <h2>Community Initiatives</h2>
       <p>
-        Local projects like Precious Plastic showcase how community-driven recycling efforts can make a difference.
-        These initiatives not only manage plastic waste but also deliver socioeconomic benefits by creating jobs and inspiring sustainable practices within communities.
+        Initiatives like Precious Plastic demonstrate how local recycling projects not only reduce waste but also create socioeconomic benefits.
+        These community-driven efforts empower local citizens and promote sustainable practices on the ground.
       </p>
       <ul>
-        <li>Localized recycling models provide environmental and social value</li>
-        <li>Community recycling centers and hands-on projects</li>
-        <li>Real-world examples and success stories</li>
+        <li>Localized recycling models</li>
+        <li>Economic and environmental impact</li>
+        <li>Real-world success stories</li>
       </ul>
     </section>
-
-    <section class="quiz-section">
-      <h2>Quick Recycling Quiz</h2>
-      <p>Test your knowledge on recycling facts:</p>
-      <form id="quizForm">
-        <label for="quiz">Mechanical recycling often leads to which problem?</label><br>
-        <input type="radio" id="degradation" name="quiz" value="Polymer degradation">
-        <label for="degradation">Polymer degradation</label><br>
-        <input type="radio" id="cost" name="quiz" value="High cost">
-        <label for="cost">High cost</label><br>
-        <input type="radio" id="efficiency" name="quiz" value="Increased efficiency">
-        <label for="efficiency">Increased efficiency</label><br>
-        <button type="button" onclick="submitQuiz()">Submit</button>
-      </form>
-      <div id="quizResult"></div>
-    </section>
   </main>
-  <footer>
-    <p>&copy; 2025 Recycling Reimagined. All Rights Reserved.</p>
-  </footer>
-  <script>
-    function submitQuiz() {
-      var quizOptions = document.getElementsByName('quiz');
-      var selected = "";
-      for (var i = 0; i < quizOptions.length; i++) {
-        if (quizOptions[i].checked) {
-          selected = quizOptions[i].value;
-          break;
-        }
-      }
-      var resultDiv = document.getElementById('quizResult');
-      if (selected) {
-        if (selected === "Polymer degradation") {
-          resultDiv.innerHTML = "Correct! Mechanical recycling can cause polymer degradation.";
-        } else {
-          resultDiv.innerHTML = "Incorrect. Try again!";
-        }
-      } else {
-        resultDiv.innerHTML = "Please select an option.";
-      }
-    }
-  </script>
+  <div class="submission-info">
+    DC COMP II research remix assignment submission, mrs. flint, made by ahmed belal, april 2025
+  </div>
 </body>
 </html>
